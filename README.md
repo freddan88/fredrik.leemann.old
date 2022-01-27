@@ -1,2 +1,1 @@
-# fredrik.leemann.se-tutorials
-My Tutorials
+# My Tutorials
