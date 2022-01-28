@@ -38,3 +38,5 @@ Reboot your computer
 ```bash
 apt install i3 zsh git ssh zip wget curl nano sudo net-tools slick-greeter gparted synaptic neofetch nitrogen imagemagick mirage xfce4-screenshooter compton gimp lightdm -y
 ```
+
+- https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
