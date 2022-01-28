@@ -49,3 +49,5 @@ apt update && apt install i3 zsh git zip wget curl nano sudo net-tools gparted s
 https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
 
 https://github.com/denesb/xfce4-i3-workspaces-plugin
+
+https://github.com/freddan88/xubuntu-i3wm
