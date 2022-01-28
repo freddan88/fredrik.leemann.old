@@ -4,7 +4,7 @@
 
 [Tutorial License: MIT](https://choosealicense.com/licenses/mit/)
 
-| Links:    |                                                                                      |
+| My Links: |                                                                                      |
 | --------- | ------------------------------------------------------------------------------------ |
 | WebPage:  | [leemann.se/fredrik](http://www.leemann.se/fredrik)                                  |
 | LinkedIn: | [linkedin.com/fredrik-leemann](https://se.linkedin.com/in/fredrik-leemann-821b19110) |
