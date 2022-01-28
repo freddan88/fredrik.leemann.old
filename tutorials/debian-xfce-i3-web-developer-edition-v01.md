@@ -36,7 +36,7 @@ apt update && apt upgrade -y && reboot
 #### 2. Download new wallpaper (run as root)
 
 `cd /tmp && mkdir -p /usr/share/wallpaper`<br/>
-`wget https://img.wallpapersafari.com/desktop/1920/1080/95/51/LEps6S.jpg && mv LEps6S.jpg /usr/share/wallpaper/linux-wallpaper-01.jpg`<br/>
+`wget https://img.wallpapersafari.com/desktop/1920/1080/95/51/LEps6S.jpg && mv LEps6S.jpg /usr/share/wallpaper/linux-wallpaper-01.jpg`
 
 #### 3. Download and install new themes (run as root)
 
@@ -44,7 +44,7 @@ Link: http://packages.linuxmint.com/pool/main/m
 
 `cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.6.4_all.deb`<br/>
 `cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-y-icons/mint-y-icons_1.5.9_all.deb`<br/>
-`cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-y-theme/mint-y-theme_1.2.3_all.deb`<br/>
+`cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-y-theme/mint-y-theme_1.2.3_all.deb`
 
 ```bash
 apt install ./mint-y-icons_*_all.deb ./mint-x-icons_*_all.deb ./mint-y-theme_*_all.deb -y
@@ -56,28 +56,38 @@ apt install ./mint-y-icons_*_all.deb ./mint-x-icons_*_all.deb ./mint-y-theme_*_a
 apt update && apt install i3 zsh git zip wget curl nano sudo net-tools gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter xfce4-appmenu-plugin compton gimp lightdm slick-greeter && apt autoremove -y
 ```
 
+Docker: https://docs.docker.com/engine/install/debian
+
+`apt install ca-certificates curl gnupg lsb-release`<br/>
+`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`<br/>
+`echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" tee /etc/apt/sources.list.d/docker.list > /dev/null`
+
+```bash
+apt install docker-ce docker-ce-cli containerd.io -y
+```
+
+Add your user to sudo-group
+
+`usermod -aG sudo <your-username>`
+
+#### 5. Download and install tools (run as user)
+
+Oh My Zsh: https://ohmyz.sh
+
+`sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`<br/>
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+
 Node & npm version control: https://github.com/nvm-sh/nvm
 
 ```bash
 cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-Oh My Zsh: https://ohmyz.sh
-
-`sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`<br/>
-`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`<br/>
-
-Docker: https://docs.docker.com/engine/install/debian
-
-`apt install ca-certificates curl gnupg lsb-release`<br/>
-`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`<br/>
-`echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" tee /etc/apt/sources.list.d/docker.list > /dev/null`<br/>
+`nvm install --lts`
 
 #### 5. Configure
 
-- usermod -aG sudo <your-username>
-
--
+- sudo usermod -aG docker <your-username>
 
 nano /etc/lightdm/slick-greeter.conf
 [Greeter]
