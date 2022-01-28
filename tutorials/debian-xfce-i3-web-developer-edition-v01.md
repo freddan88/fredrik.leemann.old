@@ -53,18 +53,10 @@ apt install ./mint-y-icons_*_all.deb ./mint-x-icons_*_all.deb ./mint-y-theme_*_a
 #### 4. Download and install software (run as root)
 
 ```bash
-apt update && apt install i3 zsh git zip wget curl nano sudo net-tools gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter xfce4-appmenu-plugin compton gimp lightdm slick-greeter && apt autoremove -y
+apt update && apt install i3 zsh git zip wget curl gnupg nano sudo net-tools gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter xfce4-appmenu-plugin compton gimp lightdm slick-greeter ca-certificates lsb-release && apt autoremove -y
 ```
 
 Docker: https://docs.docker.com/engine/install/debian
-
-`apt install ca-certificates curl gnupg lsb-release`<br/>
-`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`<br/>
-`echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" tee /etc/apt/sources.list.d/docker.list > /dev/null`
-
-```bash
-apt install docker-ce docker-ce-cli containerd.io -y
-```
 
 Add your user to sudo-group
 
