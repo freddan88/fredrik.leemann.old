@@ -76,15 +76,13 @@ Add your user to docker-group
 
 #### 5. Add configuration for login manager
 
-> nano /etc/lightdm/slick-greeter.conf
-
-> echo > [Greeter]<br/>
-> echo >> background=/usr/share/wallpapers/linux-wallpaper-01.jpg<br/>
-> echo >> draw-user-backgrounds=false<br/>
-> echo >> theme-name=Mint-Y-Dark<br/>
-> echo >> icon-theme-name=Mint-Y-Dark<br/>
-> echo >> activate-numlock=true<br/>
-> echo >> draw-grid=false<br/>
+> echo [Greeter] > /etc/lightdm/slick-greeter.conf<br/>
+> echo background=/usr/share/wallpapers/linux-wallpaper-01.jpg >> /etc/lightdm/slick-greeter.conf<br/>
+> echo draw-user-backgrounds=false >> /etc/lightdm/slick-greeter.conf<br/>
+> echo theme-name=Mint-Y-Dark >> /etc/lightdm/slick-greeter.conf<br/>
+> echo icon-theme-name=Mint-Y-Dark >> /etc/lightdm/slick-greeter.conf<br/>
+> echo activate-numlock=true >> /etc/lightdm/slick-greeter.conf<br/>
+> echo draw-grid=false >> /etc/lightdm/slick-greeter.conf<br/>
 
 #### 6. Download and install tools (run as user)
 
