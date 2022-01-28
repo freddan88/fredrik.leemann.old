@@ -70,7 +70,23 @@ Add your user to sudo-group
 
 `usermod -aG sudo <your-username>`
 
-#### 5. Download and install tools (run as user)
+Add your user to docker-group
+
+`usermod -aG docker <your-username>`
+
+#### 5. Add configuration for login manager
+
+> nano /etc/lightdm/slick-greeter.conf
+
+> echo > [Greeter]<br/>
+> echo >> background=/usr/share/wallpapers/linux-wallpaper-01.jpg<br/>
+> echo >> draw-user-backgrounds=false<br/>
+> echo >> theme-name=Mint-Y-Dark<br/>
+> echo >> icon-theme-name=Mint-Y-Dark<br/>
+> echo >> activate-numlock=true<br/>
+> echo >> draw-grid=false<br/>
+
+#### 6. Download and install tools (run as user)
 
 Oh My Zsh: https://ohmyz.sh
 
@@ -84,21 +100,6 @@ cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/instal
 ```
 
 `nvm install --lts`
-
-#### 5. Configure
-
-- sudo usermod -aG docker <your-username>
-
-nano /etc/lightdm/slick-greeter.conf
-[Greeter]
-background=/usr/share/wallpapers/linux-wallpaper-01.jpg
-draw-user-backgrounds=false
-theme-name=Mint-Y-Dark
-icon-theme-name=Mint-Y-Dark
-activate-numlock=true
-draw-grid=false
-
-#### 6. Download and install tools (run as user)
 
 https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
 
