@@ -21,22 +21,16 @@ This tutorial is tested on:
 - [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 - [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
-#### 1 Update your package manager lists and system (run as root):
+#### 1. Update your package manager and system (run as root) OBS: Will reboot your computer!
 
 ```bash
-apt update && apt upgrade -y
+apt update && apt upgrade -y && reboot
 ```
 
----
-
-Reboot your computer
-
----
-
-#### 2 Download and install software (run as root):
+#### 2. Download and install software (run as root)
 
 ```bash
-apt install i3 zsh git ssh zip wget curl nano sudo net-tools slick-greeter gparted synaptic neofetch nitrogen imagemagick mirage xfce4-screenshooter compton gimp lightdm -y
+apt install i3 zsh git ssh zip wget curl nano sudo net-tools slick-greeter gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter compton gimp lightdm -y
 ```
 
-- https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
+https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
