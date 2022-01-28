@@ -30,7 +30,7 @@ apt update && apt upgrade -y && reboot
 #### 2. Download and install software (run as root)
 
 ```bash
-apt install i3 zsh git ssh zip wget curl nano sudo net-tools slick-greeter gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter compton gimp lightdm -y
+apt update && apt install i3 zsh git zip wget curl nano sudo net-tools gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter compton gimp lightdm slick-greeter -y
 ```
 
 https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
