@@ -12,14 +12,14 @@
 
 This tutorial is tested on:
 
-- Debian Linux 11 (bullseye) 64Bit
+-   Debian Linux 11 (bullseye) 64Bit
 
 ### Installation
 
 > First download and install Debian Linux with XFCE desktop from any of the links below:
 
-- [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
-- [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
+-   [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
+-   [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
 #### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
 
