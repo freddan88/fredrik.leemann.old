@@ -1,4 +1,4 @@
-## Debian Linux XFCE + i3 Web Developer Edition Version 01
+## Debian Linux XFCE + i3 Web Developer Edition
 
 > Tutorial on how to install Debian Linux with XFCE and i3 window manager + Tools for web-developing
 
