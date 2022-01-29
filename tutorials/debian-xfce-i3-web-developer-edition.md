@@ -21,13 +21,11 @@ This tutorial is tested on:
 - [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 - [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
-> Login as root
+#### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
 
 ```bash
 su -
 ```
-
-#### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
 
 ```bash
 apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && apt upgrade -y && reboot
@@ -35,8 +33,9 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 
 #### 2. Download and execute installation-script as sudo (run as user)
 
-Download script:
-`wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh`
+```bash
+wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh
+```
 
 ```bash
 chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
