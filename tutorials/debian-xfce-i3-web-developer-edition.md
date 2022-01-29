@@ -27,56 +27,22 @@ This tutorial is tested on:
 su -
 ```
 
-#### 1. Update your package manager and system (run as root) OBS: Will reboot your computer!
+#### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
 
 ```bash
-apt update && apt upgrade -y && reboot
+apt update && apt install wget sudo -y && usermod -aG sudo $USER && apt upgrade -y && reboot
 ```
 
-#### 2. Download new wallpaper (run as root)
+#### 2. Download and execute installation-script as sudo (run as user)
 
-`cd /tmp && mkdir -p /usr/share/wallpaper`<br/>
-`wget https://img.wallpapersafari.com/desktop/1920/1080/95/51/LEps6S.jpg && mv LEps6S.jpg /usr/share/wallpaper/linux-wallpaper-01.jpg`
-
-#### 3. Download and install new themes (run as root)
-
-Link: http://packages.linuxmint.com/pool/main/m
-
-`cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.6.4_all.deb`<br/>
-`cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-y-icons/mint-y-icons_1.5.9_all.deb`<br/>
-`cd /tmp && wget http://packages.linuxmint.com/pool/main/m/mint-y-theme/mint-y-theme_1.2.3_all.deb`
+Download script from terminal:
+`wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh`
 
 ```bash
-apt install ./mint-y-icons_*_all.deb ./mint-x-icons_*_all.deb ./mint-y-theme_*_all.deb -y
+chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
 ```
 
-#### 4. Download and install software (run as root)
-
-```bash
-apt update && apt install i3 zsh git zip wget curl gnupg nano sudo net-tools gparted synaptic neofetch nitrogen imagemagick xfce4-screenshooter xfce4-appmenu-plugin compton gimp lightdm slick-greeter ca-certificates lsb-release && apt autoremove -y
-```
-
-Docker: https://docs.docker.com/engine/install/debian
-
-Add your user to sudo-group
-
-`usermod -aG sudo <your-username>`
-
-Add your user to docker-group
-
-`usermod -aG docker <your-username>`
-
-#### 5. Add configuration for login manager
-
-> echo [Greeter] > /etc/lightdm/slick-greeter.conf<br/>
-> echo background=/usr/share/wallpapers/linux-wallpaper-01.jpg >> /etc/lightdm/slick-greeter.conf<br/>
-> echo draw-user-backgrounds=false >> /etc/lightdm/slick-greeter.conf<br/>
-> echo theme-name=Mint-Y-Dark >> /etc/lightdm/slick-greeter.conf<br/>
-> echo icon-theme-name=Mint-Y-Dark >> /etc/lightdm/slick-greeter.conf<br/>
-> echo activate-numlock=true >> /etc/lightdm/slick-greeter.conf<br/>
-> echo draw-grid=false >> /etc/lightdm/slick-greeter.conf<br/>
-
-#### 6. Download and install tools (run as user)
+#### 3. Download and install tools (run as user)
 
 Oh My Zsh: https://ohmyz.sh
 
