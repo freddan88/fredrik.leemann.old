@@ -64,13 +64,13 @@ cd && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~
 Node & npm version control: https://github.com/nvm-sh/nvm
 
 ```bash
-cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+cd && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 #### 4. Download and update your zsh-config
 
 ```bash
-sudo ./debian-xfce-i3_x64.sh zsh-config
+cd && sudo ./debian-xfce-i3_x64.sh zsh-config
 ```
 
 #### 5. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
