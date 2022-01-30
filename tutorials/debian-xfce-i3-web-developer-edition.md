@@ -76,7 +76,7 @@ cd && sudo ./debian-xfce-i3_x64.sh zsh-config
 #### 5. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
 
 ```bash
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && rm -f debian-xfce-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 6. Command to run after reboot
