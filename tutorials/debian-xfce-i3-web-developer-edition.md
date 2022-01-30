@@ -21,7 +21,7 @@ This tutorial is tested on:
 -   [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 -   [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
-### FOR VM:S in virtualbox (VIRTUALBOX GUEST EXTENSIONS)
+#### VM:S using virtualbox (VIRTUALBOX GUEST EXTENSIONS)
 
 ```bash
 apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
