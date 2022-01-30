@@ -40,7 +40,7 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 #### 2. Download and execute installation-script as sudo (run as user)
 
 ```bash
-cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh -O debian-xfce-i3_x64.sh
+cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh
 ```
 
 ```bash
