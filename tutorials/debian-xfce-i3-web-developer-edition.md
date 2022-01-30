@@ -67,7 +67,7 @@ Node & npm version control: https://github.com/nvm-sh/nvm
 cd && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-#### 4. Download and update your zsh-config
+#### 4. Download and update your zsh-config (run as user)
 
 ```bash
 cd && sudo ./debian-xfce-i3_x64.sh zsh-config
@@ -79,7 +79,7 @@ cd && sudo ./debian-xfce-i3_x64.sh zsh-config
 cd && rm -f debian-xfce-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
-#### 6. Command to run after reboot
+#### 6. Command to run after reboot (run as user)
 
 ```bash
 nvm install --lts && nvm use node
