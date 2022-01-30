@@ -21,6 +21,12 @@ This tutorial is tested on:
 -   [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 -   [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
+### FOR VM:S in virtualbox (VIRTUALBOX GUEST EXTENSIONS)
+
+```bash
+apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
+```
+
 #### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
 
 ```bash
@@ -45,8 +51,15 @@ chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
 
 Oh My Zsh: https://ohmyz.sh
 
-`sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`<br/>
-`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+```bash
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+Zsh extension: autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
 Node & npm version control: https://github.com/nvm-sh/nvm
 
@@ -54,13 +67,20 @@ Node & npm version control: https://github.com/nvm-sh/nvm
 cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-`nvm install --lts`
+#### 4. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
 
-https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+```
 
-https://github.com/denesb/xfce4-i3-workspaces-plugin
+#### 5. Command to run after reboot
 
-https://github.com/freddan88/xubuntu-i3wm
+```bash
+nvm install --lts
+```
 
-FOR VM:S (VIRTUALBOX GUEST EXTENSIONS)
-apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
+#### Links
+
+-   https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
+-   https://github.com/denesb/xfce4-i3-workspaces-plugin
+-   https://github.com/freddan88/xubuntu-i3wm
