@@ -82,7 +82,7 @@ cd && rm -f debian-xfce-i3_x64.sh && sudo apt update && sudo apt upgrade -y && s
 #### 6. Command to run after reboot
 
 ```bash
-nvm install --lts
+nvm install --lts && nvm use node
 ```
 
 #### Links
