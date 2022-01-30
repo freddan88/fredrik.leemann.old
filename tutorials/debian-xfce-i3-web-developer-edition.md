@@ -40,11 +40,11 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 #### 2. Download and execute installation-script as sudo (run as user)
 
 ```bash
-wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh
+cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-xfce-i3_x64.sh
 ```
 
 ```bash
-chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
+cd && chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
 ```
 
 #### 3. Download and install tools (run as user)
@@ -52,13 +52,13 @@ chmod 754 debian-xfce-i3_x64.sh && sudo ./debian-xfce-i3_x64.sh install
 Oh My Zsh: https://ohmyz.sh
 
 ```bash
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+cd && sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
 Zsh extension: autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
 
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+cd && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 Node & npm version control: https://github.com/nvm-sh/nvm
