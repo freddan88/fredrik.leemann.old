@@ -67,13 +67,19 @@ Node & npm version control: https://github.com/nvm-sh/nvm
 cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-#### 4. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
+#### 4. Download and update your zsh-config
+
+```bash
+sudo ./debian-xfce-i3_x64.sh zsh-config
+```
+
+#### 5. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
-#### 5. Command to run after reboot
+#### 6. Command to run after reboot
 
 ```bash
 nvm install --lts
