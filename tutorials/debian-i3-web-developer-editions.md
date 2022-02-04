@@ -29,9 +29,9 @@ su -
 apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && apt upgrade -y && reboot
 ```
 
-### OPTION_1: Install Debian Linux with XFCE and i3 window-manager
+### OPTION_1: Install Debian Linux with XFCE-desktop and i3 window-manager
 
-#### 1-1. Install Debian on your computer with the XFCE desktop
+#### 1-1. Install Debian on your computer with the XFCE-desktop
 
 #### 1-2. Download the installation-script (run as user)
 
@@ -39,7 +39,7 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
-### OPTION_2: Install Debian Linux with some LXDE packages and i3 window-manager
+### OPTION_2: Install Debian Linux with LXDE-packages and i3 window-manager
 
 #### 1-1. Install Debian on your computer with no desktop
 
