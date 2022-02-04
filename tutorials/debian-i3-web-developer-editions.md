@@ -19,7 +19,7 @@ Tutorials are tested for:
 -   [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 -   [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
 
-#### 1. Update system and install some packages (run as root) OBS: Will reboot your computer!
+#### 1. Update system and install packages and add your user as sudo-user (run as root) OBS: Will reboot your computer!
 
 ```bash
 su -
@@ -33,31 +33,29 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 
 #### 1-1. Install Debian on your computer with the XFCE desktop
 
-#### 1-2. Download and execute the installation-script as sudo (run as user)
+#### 1-2. Download the installation-script (run as user)
 
 ```bash
-cd /tmp && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
-```
-
-```bash
-cd /tmp chmod 754 debian-i3-xfce_x64.sh && sudo ./debian-i3-xfce_x64.sh install
+cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
 ### OPTION_2: Install Debian Linux with some LXDE packages and i3 window-manager
 
-#### 1-3. Install Debian on your computer with no desktop
+#### 1-1. Install Debian on your computer with no desktop
 
-#### 1-4. Download and execute the installation-script as sudo (run as user)
-
-```bash
-cd /tmp && https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lx_x64.sh
-```
+#### 1-2. Download the installation-script (run as user)
 
 ```bash
-cd /tmp chmod 754 debian-i3-lx_x64.sh && sudo ./debian-i3-lx_x64.sh install
+cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lx_x64.sh
 ```
 
-#### 2. Download and install tools (run as user)
+#### 2. Execute the installation-script as sudo (run as user)
+
+```bash
+cd && chmod 754 debian-i3_x64.sh && sudo debian-i3_x64.sh install
+```
+
+#### 3. Download and install tools (run as user)
 
 ##### Oh My Zsh: https://ohmyz.sh
 
@@ -77,19 +75,23 @@ cd && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~
 cd && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-#### 3. Download and update your zsh-config (run as user)
+#### 4. Download and update your zsh-config (run as user)
 
 ```bash
-cd && sudo ./debian-xfce-i3_x64.sh zsh-config
+cd && sudo ./debian-i3-main_x64.sh zsh-config
 ```
 
-#### 4. Update packages and cleanup system (run as user) OBS: Will reboot your computer!
+#### 5. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-cd && rm -f debian-xfce-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && sudo rm -f debian-i3*x64.sh
 ```
 
-#### 5. Command to run after reboot (run as user)
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+```
+
+#### 6. Command to run after reboot (run as user)
 
 ```bash
 nvm install --lts && nvm alias default node && nvm use node
