@@ -46,7 +46,7 @@ cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredr
 #### 1-2. Download the installation-script (run as user)
 
 ```bash
-cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lx_x64.sh
+cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lxde_x64.sh
 ```
 
 #### 2. Execute the installation-script as sudo (run as user)
@@ -84,11 +84,7 @@ cd && sudo ./debian-i3-main_x64.sh zsh-config
 #### 5. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-cd && sudo rm -f debian-i3*x64.sh
-```
-
-```bash
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && rm -f debian-i3*sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 6. Command to run after reboot (run as user)
