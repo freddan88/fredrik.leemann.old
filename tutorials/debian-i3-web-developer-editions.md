@@ -1,6 +1,6 @@
 ## Debian Linux XFCE + i3 Web Developer Edition
 
-> Tutorial to install Debian with either XFCE-desktop and i3-wm or LXDE-packages and i3-wm
+> Tutorial to install Debian with either XFCE-desktop + i3-wm or LXDE-packages + i3-wm
 
 [License: MIT](https://choosealicense.com/licenses/mit)
 
