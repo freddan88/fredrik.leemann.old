@@ -1,5 +1,7 @@
 ## Debian Linux XFCE + i3 Web Developer Edition
 
+> Tutorial to install Debian with either XFCE-desktop and i3-wm or LXDE-packages and i3-wm
+
 [License: MIT](https://choosealicense.com/licenses/mit)
 
 | My Links: |                                                                                      |
@@ -14,7 +16,7 @@ Tutorials are tested for:
 
 ### Installation
 
-> First download and install Debian Linux from any of the links below:
+##### First download and install Debian Linux from any of the links below:
 
 -   [Download Debian Linux ISO (netinst)](https://www.debian.org/download)
 -   [Download Debian Linux ISO (nonfree)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware)
