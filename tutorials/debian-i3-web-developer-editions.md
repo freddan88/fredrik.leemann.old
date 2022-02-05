@@ -41,9 +41,11 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
-#### Set environment-variable for URL on where to download i3-config file (run as user)
+#### 1-3 Set environment-variable for URL on where to download i3-config file (run as user)
 
+```bash
 export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-lxde.txt"
+```
 
 ### OPTION_2: Install Debian Linux with LXDE-panel and i3 window-manager
 
