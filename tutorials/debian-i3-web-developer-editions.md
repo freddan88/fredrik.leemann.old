@@ -44,7 +44,7 @@ cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredr
 #### 1-3 Set environment-variable for URL on where to download i3-config file (run as user)
 
 ```bash
-export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-lxde.txt"
+export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-xfce.txt"
 ```
 
 ### OPTION_2: Install Debian Linux with LXDE-panel and i3 window-manager
@@ -57,13 +57,29 @@ export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lxde_x64.sh
 ```
 
+#### 1-3 Set environment-variable for URL on where to download i3-config file (run as user)
+
+```bash
+export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-lxde.txt"
+```
+
 #### 2. Execute the installation-script as sudo (run as user)
 
 ```bash
 cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3_x64.sh install
 ```
 
-#### 3. Download and install tools (run as user)
+#### 3. Download the main-installation script and execute it (run as user)
+
+```bash
+cd & wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
+```
+
+```bash
+cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3-main_x64.sh install
+```
+
+#### 4. Download and install tools (run as user)
 
 ##### Oh My Zsh: https://ohmyz.sh
 
@@ -83,19 +99,19 @@ cd && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~
 cd && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-#### 4. Download and update your zsh-config (run as user)
+#### 5. Download and update your zsh-config (run as user)
 
 ```bash
 cd && sudo ./debian-i3-main_x64.sh zsh-config
 ```
 
-#### 5. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
+#### 6. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
 cd && rm -f debian-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
-#### 6. Command to run after reboot (run as user)
+#### 7. Command to run after reboot (run as user)
 
 ```bash
 nvm install --lts && nvm alias default node && nvm use node
