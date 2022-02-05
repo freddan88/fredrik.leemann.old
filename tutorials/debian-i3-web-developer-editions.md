@@ -74,25 +74,25 @@ cd && sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ##### Zsh extension: autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
 
 ```bash
-cd && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ##### Node & npm version control: https://github.com/nvm-sh/nvm
 
 ```bash
-cd && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 #### 5. Download and update your zsh-config (run as user)
 
 ```bash
-cd && sudo ./debian-i3-main_x64.sh zsh-config
+sudo ./debian-i3-main_x64.sh zsh-config && xdg-user-dirs-update
 ```
 
 #### 6. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-cd && rm -f debian-i3* && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+rm -f debian-i3* && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 7. Command to run after reboot (run as user)
