@@ -80,13 +80,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ##### Node & npm version control: https://github.com/nvm-sh/nvm
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+cd /tmp && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 #### 5. Download and update your zsh-config (run as user)
 
 ```bash
-sudo ./debian-i3-main_x64.sh zsh-config && xdg-user-dirs-update 2> /dev/null
+cd && sudo ./debian-i3-main_x64.sh zsh-config && xdg-user-dirs-update 2> /dev/null
 ```
 
 #### 6. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
