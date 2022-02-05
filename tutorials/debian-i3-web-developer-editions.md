@@ -41,7 +41,7 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
-### OPTION_2: Install Debian Linux with LXDE-packages and i3 window-manager
+### OPTION_2: Install Debian Linux with LXDE-panel and i3 window-manager
 
 #### 1-1. Install Debian on your computer with no desktop
 
@@ -54,7 +54,7 @@ cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredr
 #### 2. Execute the installation-script as sudo (run as user)
 
 ```bash
-cd && chmod 754 debian-i3_x64.sh && sudo debian-i3_x64.sh install
+cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3_x64.sh install
 ```
 
 #### 3. Download and install tools (run as user)
