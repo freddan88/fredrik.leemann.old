@@ -92,7 +92,7 @@ sudo ./debian-i3-main_x64.sh zsh-config && xdg-user-dirs-update 2> /dev/null
 #### 6. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-rm -f debian-i3* && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && rm -f debian-i3* && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 7. Command to run after reboot (run as user)
