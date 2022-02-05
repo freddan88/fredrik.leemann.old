@@ -57,7 +57,7 @@ cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredr
 cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
 ```
 
-#### 3. Execute the installation-scripts as sudo (run as user)
+#### 3. Execute installation-scripts as sudo (run as user)
 
 ```bash
 cd && chmod 754 debian*_x64.sh && sudo ./debian-i3_x64.sh install && sudo ./debian-i3-main_x64.sh install
