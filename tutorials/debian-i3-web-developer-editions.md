@@ -41,6 +41,10 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
+#### Set environment-variable for URL on where to download i3-config file (run as user)
+
+export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-lxde.txt"
+
 ### OPTION_2: Install Debian Linux with LXDE-panel and i3 window-manager
 
 #### 1-1. Install Debian on your computer with no desktop
@@ -86,7 +90,7 @@ cd && sudo ./debian-i3-main_x64.sh zsh-config
 #### 5. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-cd && rm -f debian-i3*.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && rm -f debian-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 6. Command to run after reboot (run as user)
