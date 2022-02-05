@@ -1,4 +1,4 @@
-## Debian Linux XFCE + i3 Web Developer Edition
+## Debian Linux Web-Developers Edition
 
 > Tutorial to install Debian with either XFCE-desktop + i3-wm or LXDE-packages + i3-wm
 
