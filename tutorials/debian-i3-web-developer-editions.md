@@ -41,12 +41,6 @@ apt update && apt install wget sudo -y && usermod -aG sudo <YOUR_USER_NAME> && a
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-xfce_x64.sh
 ```
 
-#### 1-3 Set environment-variable for URL on where to download i3-config file (run as user)
-
-```bash
-export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-xfce.txt"
-```
-
 ### OPTION_2: Install Debian Linux with LXDE-panel and i3 window-manager
 
 #### 1-1. Install Debian on your computer with no desktop
@@ -57,26 +51,16 @@ export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lxde_x64.sh
 ```
 
-#### 1-3 Set environment-variable for URL on where to download i3-config file (run as user)
-
-```bash
-export URL_I3_CONFIG="https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/configs/config-i3-lxde.txt"
-```
-
-#### 2. Execute the installation-script as sudo (run as user)
-
-```bash
-cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3_x64.sh install
-```
-
-#### 3. Download the main-installation script and execute it (run as user)
+#### 2. Download the main-installation script and execute it (run as user)
 
 ```bash
 cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
 ```
 
+#### 3. Execute the installation-scripts as sudo (run as user)
+
 ```bash
-cd && chmod 754 debian-i3-main_x64.sh && sudo ./debian-i3-main_x64.sh install
+cd && chmod 754 debian*_x64.sh && sudo ./debian-i3_x64.sh install && sudo ./debian-i3-main_x64.sh install
 ```
 
 #### 4. Download and install tools (run as user)
@@ -108,7 +92,7 @@ cd && sudo ./debian-i3-main_x64.sh zsh-config
 #### 6. Cleanup system and update packages (run as user) OBS: Will reboot your computer!
 
 ```bash
-cd && rm -f debian-i3_x64.sh && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
+cd && rm -f debian-i3* && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo reboot
 ```
 
 #### 7. Command to run after reboot (run as user)
