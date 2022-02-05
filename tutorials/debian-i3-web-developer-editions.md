@@ -76,7 +76,7 @@ cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/
 ```
 
 ```bash
-cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3-main_x64.sh install
+cd && chmod 754 debian-i3-main_x64.sh && sudo ./debian-i3-main_x64.sh install
 ```
 
 #### 4. Download and install tools (run as user)
