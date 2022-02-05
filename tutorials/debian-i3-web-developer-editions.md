@@ -51,7 +51,7 @@ cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredr
 cd && wget -O debian-i3_x64.sh https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-lxde_x64.sh
 ```
 
-#### 2. Download the main-installation script and execute it (run as user)
+#### 2. Download the main-installation script (run as user)
 
 ```bash
 cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
