@@ -72,7 +72,7 @@ cd && chmod 754 debian-i3_x64.sh && sudo ./debian-i3_x64.sh install
 #### 3. Download the main-installation script and execute it (run as user)
 
 ```bash
-cd & wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
+cd && wget https://raw.githubusercontent.com/freddan88/fredrik.linux.files/main/i3/debian-i3-main_x64.sh
 ```
 
 ```bash
