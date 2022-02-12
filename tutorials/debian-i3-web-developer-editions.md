@@ -109,6 +109,7 @@ sudo apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
 
 #### Links
 
+-   https://www.reddit.com/r/debian/comments/pn1oia/what_happened_to_libappindicator31_in_debian_11
 -   https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
 -   https://github.com/denesb/xfce4-i3-workspaces-plugin
 -   https://itsfoss.com/change-default-terminal-ubuntu
