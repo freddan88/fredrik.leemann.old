@@ -110,7 +110,7 @@ sudo apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
 #### Games
 
 ```bash
-sudo apt install openarena 0ad frozen-bubble hedgewars -y
+sudo apt install openarena 0ad frozen-bubble hedgewars supertux supertuxkart quadrapassel -y
 ```
 
 #### Links
@@ -119,6 +119,8 @@ sudo apt install openarena 0ad frozen-bubble hedgewars -y
 -   https://github.com/freddan88/debian-linux-i3-develolper/blob/master/debian_install_i3-2.txt
 -   http://wuwablog.blogspot.com/2018/07/atftpd-vs-tftpd-hpa.html
 -   https://github.com/denesb/xfce4-i3-workspaces-plugin
+-   https://www.popot.org/get_the_games.php?game=SDLPoP
 -   https://itsfoss.com/change-default-terminal-ubuntu
 -   https://github.com/freddan88/xubuntu-i3wm
 -   https://wiki.debian.org/NetworkManager
+-   http://www.secretmaryo.org
