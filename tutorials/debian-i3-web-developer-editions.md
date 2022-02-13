@@ -110,7 +110,7 @@ sudo apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
 #### Games
 
 ```bash
-sudo apt install openarena 0ad warzone2100 frozen-bubble hedgewars supertux supertuxkart quadrapassel xmoto pinball pinball-table-gnu pinball-table-hurd -y
+sudo apt install openarena 0ad warzone2100 frozen-bubble hedgewars supertux supertuxkart quadrapassel xmoto pinball pinball-table-gnu pinball-table-hurd gnome-nibbles teeworlds -y
 ```
 
 #### Links
