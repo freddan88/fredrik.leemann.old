@@ -107,6 +107,12 @@ nvm install --lts && nvm alias default node && nvm use node
 sudo apt install linux-headers-$(uname -r) make gcc dkms build-essential -y
 ```
 
+#### Games
+
+```bash
+sudo apt install openarena 0ad frozen-bubble hedgewars -y
+```
+
 #### Links
 
 -   https://www.reddit.com/r/debian/comments/pn1oia/what_happened_to_libappindicator31_in_debian_11
