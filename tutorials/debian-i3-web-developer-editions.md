@@ -121,6 +121,7 @@ sudo apt install openarena 0ad warzone2100 frozen-bubble hedgewars supertux supe
 -   https://github.com/denesb/xfce4-i3-workspaces-plugin
 -   https://www.popot.org/get_the_games.php?game=SDLPoP
 -   https://itsfoss.com/change-default-terminal-ubuntu
+-   https://thevaluable.dev/i3-config-mouseless
 -   https://github.com/freddan88/xubuntu-i3wm
 -   https://wiki.debian.org/NetworkManager
 -   http://www.secretmaryo.org
